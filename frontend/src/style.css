@@ -1,32 +1,31 @@
 @import 'flowbite';
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 html,
 body,
 #app {
     margin: 0;
     padding: 0;
     height: 100%;
-
 }
 
 @font-face {
-    font-family: 'leeseoyun';
+    font-family: 'NotoSansKR';
     src: url('@/assets/fonts.ttf') format('truetype');
-    font-weight: auto;
+    font-weight: normal;
     font-style: normal;
 }
-* {
-    font-family: leeseoyun, serif;
-}
 
+* {
+    font-family: 'NotoSansKR', sans-serif;
+}
 
 .main-wrap {
     display: flex;
     min-height: 100%;
-    font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+    font-family: 'NotoSansKR', sans-serif;
     font-size: 14px;
 }
 
@@ -67,8 +66,8 @@ body,
     width: 18px;
     height: 18px;
     border: solid 2px transparent;
-    border-top-color: green; /* 원하는 색상으로 변경 가능 */
-    border-left-color: green; /* 원하는 색상으로 변경 가능 */
+    border-top-color: green;
+    border-left-color: green;
     border-radius: 50%;
     animation: nprogress-spinner 400ms linear infinite;
 }
@@ -100,4 +99,3 @@ body,
     padding: 20px;
     box-sizing: border-box;
 }
-
